@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miharu Bootstrap Test</title>
+  <link rel='stylesheet' href='../dist/css/bootstrap.css' type='text/css'/>
+  <style type='text/css'>
+    .key-pad table {
+      width: 100%;
+    }
+    .key-pad table td {
+      width: 33.33%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class='container-fluid' style='margin-top:30px;'>
+    <div class="row">
+      <div class="col-sm-9 col-sm-push-3">
+        <div id="vlc-movie" class="embed-responsive embed-responsive-16by9">
+          <embed class="embed-responsive-item" type="application/x-vlc-plugin" autoplay="yes" loop="no" repeat="yes" toolbar="no" allowfullscreen="no" />
+        </div>
+      </div>
+
+
+      <div class="col-sm-3 col-sm-pull-9">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="btn-toolbar" role="toolbar" aria-label="...">
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  メニュー <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                  <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option2" autocomplete="off">
+                  <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option3" autocomplete="off">
+                  <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <form role="form">
+          <div class="form-group">
+            <label for="input-headend-list">ヘッドエンド</label>
+            <select class="form-control" id="input-headend-list">
+              <option>自分のヘッドエンド</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="input-broadcast-type">放送種別</label>
+            <select class="form-control" id="input-headend-list">
+              <option>スカパー！</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="input-service-list">サービス一覧</label>
+            <select class="form-control" id="input-headend-list">
+              <option>CATV 999</option>
+            </select>
+          </div>
+        </form>
+
+        <!-- 選局 -->
+        <div class='key-pad'>
+          <form role="form">
+            <div class="form-group" style="margin-bottom:0;">
+              <label>選局</label>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <button class="btn btn-default btn-lg btn-block" data-bind="text: Number1String">-</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-default btn-lg btn-block" data-bind="text: Number2String">-</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-default btn-lg btn-block" data-bind="text: Number3String">-</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </form>
+          <form role="form">
+            <div class="form-group" style="margin-bottom:0;">
+              <label>キーパッド</label>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push1">1</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push2">2</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push3">3</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push4">4</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push5">5</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push6">6</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push7">7</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push8">8</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push9">9</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-warning btn-lg btn-block" data-bind="click: Push0">0</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-success btn-lg btn-block" data-bind="click: Decide">決定</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-success btn-lg btn-block" data-bind="click: Clear">クリア</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- 選局 -->
+
+
+      </div>
+    </div>
+
+
+    <hr />
+    <footer>
+      <p>&copy; 2015 - Miharu Communications Inc.</p>
+    </footer>
+  </div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="../dist/js/bootstrap.js"></script>
+</body>
+</html>
