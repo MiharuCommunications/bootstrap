@@ -12,38 +12,121 @@
     }
     .key-pad table td {
       width: 33.33%;
-      padding: 5px;
+      padding: 3px;
     }
   </style>
 </head>
 <body>
   <div class='container-fluid' style='margin-top:30px;'>
     <div class="row">
-      <div class="col-sm-9 col-sm-push-3">
+      <div class="col-md-9 col-md-push-3">
         <div id="vlc-movie" class="embed-responsive embed-responsive-16by9">
           <embed class="embed-responsive-item" type="application/x-vlc-plugin" autoplay="yes" loop="no" repeat="yes" toolbar="no" allowfullscreen="no" />
         </div>
       </div>
 
 
-      <div class="col-sm-3 col-sm-pull-9">
+      <div class="col-md-3 col-md-pull-9">
         <div class="row">
           <div class="col-sm-12">
-            <div class="btn-toolbar" role="toolbar" aria-label="...">
-
+            <div class="btn-toolbar pull-right" role="toolbar" aria-label="...">
               <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                   メニュー <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">サービス一覧を収集</a></li>
+                  <li><a href="#">サービス一覧を更新</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="./setting.html">設定</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./login.html">ログアウト</a></li>
                 </ul>
               </div>
 
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                  画角修正 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation" class="dropdown-header">視聴中の動画の入力画角の変更</li>
+                  <li>
+                    <a href="#">
+                      1920 &times; 1080
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      1440 &times; 1080
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      720 &times; 480
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      352 &times; 240
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      176 &times; 144
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+<!--
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  ビットレート <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li role="presentation" class="dropdown-header">視聴中の動画のビットレートの変更</li>
+                  <li>
+                    <a href="#">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      4 Mbps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true" style="opacity:0.0;"></span>
+                      2 Mbps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true" style="opacity:0.0;"></span>
+                      1 Mbps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true" style="opacity:0.0;"></span>
+                      700 Kbps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true" style="opacity:0.0;"></span>
+                      600 Kbps
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true" style="opacity:0.0;"></span>
+                      500 Kbps
+                    </a>
+                  </li>
+                </ul>
+              </div>
+-->
+<!--
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary active">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked>
@@ -58,10 +141,11 @@
                   <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
                 </label>
               </div>
-
+              -->
             </div>
           </div>
         </div>
+
 
 
         <form role="form">
